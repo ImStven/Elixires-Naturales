@@ -25,6 +25,7 @@ body{
     min-height: 70vh;
     display: flex;
     align-items: center;
+    position: relative;
     
 }
 
@@ -238,89 +239,69 @@ body{
     margin-bottom: 15px;
 }
 
-@media(max-width:991px){
+@media (max-width: 991px) {
     .menu {
-        padding: 30px;
+        padding: 10px;
     }
 
-    .menu label{
-        display: initial;
+    .menu label {
+        display: block;
+        cursor: pointer;
     }
 
-    .menu .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #323337;
+    .menu .navbar {
+        flex-direction: column;
+        position: static;
         display: none;
+        width: 100%;
+        padding: 20px 0;
     }
 
     .menu .navbar ul li {
         width: 100%;
-    }
-
-    #menu:checked ~ .navbar{
-        display: initial;
-    }
-
-    .header{
-        min-height: 0vh;
-    }
-
-    .header-content{
-        padding: 100px 30px;
-    }
-
-    .header-content p{
-        padding: 0;
-    }
-
-    .elixir{
-        padding: 30px;
-    }
-
-    .elixir-content h2{
-        padding: 0;
-    }
-
-    .txt-p{
-        padding: 0;
-    }
-
-    .elixir-group{
-        flex-direction: column;
-        margin-bottom: 0;
-    }
-
-    .elixir-img{
-        display: none;
-    }
-
-    .services{
-        padding: 30px;
-    }
-
-    .services-content p{
-        padding: 0;
-    }
-
-    .services-group{
-        flex-direction: column;
-        margin-bottom: 0;
-    }
-
-    .services-1{
-        margin-bottom: 25px;
-    }
-
-    .footer{
-        padding: 0;
-
-    }
-
-    .footer-content{
-        flex-direction: column;
         text-align: center;
+    }
+
+    #menu:checked ~ .menu-icono {
+        display: block;
+    }
+
+    .header {
+        min-height: auto;
+    }
+
+    .header-content h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .header-content p,
+    .txt-p {
+        padding: 0 20px;
+    }
+
+    .elixir-content h2,
+    .services-content h2 {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 0 20px;
+    }
+
+    .elixir-1,
+    .services-1 {
+        padding: 0 10px;
+    }
+
+    .elixir-1 img {
+        max-width: 150px;
+    }
+
+    .services-1 img {
+        width: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
     }
 }
