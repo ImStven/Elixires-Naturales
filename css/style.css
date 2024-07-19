@@ -1,14 +1,11 @@
-/* Importación de fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* Reset general */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -22,7 +19,6 @@ body {
     padding: 0 20px;
 }
 
-/* Estilos de encabezado */
 .header {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('ruta/a/tu/imagen.jpg') center bottom/cover no-repeat;
     min-height: 70vh;
@@ -68,7 +64,6 @@ body {
     border: 2px solid #a3d130;
 }
 
-/* Estilos de menú */
 .menu {
     position: absolute;
     top: 0;
@@ -80,7 +75,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 
 .menu .logo {
     font-size: 25px;
@@ -97,11 +91,13 @@ body {
 .menu .navbar ul {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .menu .navbar ul li {
     margin-left: 20px;
     position: relative;
+    float: left;
 }
 
 .menu .navbar ul li a {
@@ -132,6 +128,7 @@ body {
 #menu {
     display: none;
 }
+
 
 /* Estilos de contenido "Elixir" */
 .elixir {
@@ -264,6 +261,7 @@ body {
 
 /* Media queries */
 @media only screen and (max-width: 1200px) {
+
     .container {
         padding: 0 15px;
     }
@@ -286,6 +284,8 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
+
+    
     .header-content {
         padding: 50px 20px;
     }
@@ -347,6 +347,9 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+    .menu .navbar ul{
+        flex-direction: column;
+    }
     .header-content h1 {
         font-size: 36px;
         line-height: 48px;
@@ -375,21 +378,18 @@ body {
         padding: 20px 0;
     }
 
-    .menu.active .navbar {
-        display: flex;
-    }
-
-    .menu .navbar ul li {
-        width: 100%;
-        margin: 10px 0;
+    .menu .navbar ul {
+        margin: 0;
     }
 
     .menu .menu-icon {
         display: block;
+        cursor: pointer;
+        color: #ffffff;
     }
 
-    .header {
-        min-height: 50vh;
+    #menu:checked ~ .navbar {
+        display: flex;
     }
 
     .elixir-content h2,
@@ -397,16 +397,40 @@ body {
         padding: 0 20px;
     }
 
-    .elixir-1,
-    .services-1 {
-        padding: 0 20px;
+    .elixir-1 img {
+        width: 150px;
+    }
+
+    .elixir-1 .elixir-img {
+        display: none;
+    }
+
+    .services-content h2 {
+        font-size: 42px;
+        line-height: 56px;
     }
 
     .services-content p {
         padding: 0 20px;
     }
 
-    .footer {
-        padding: 30px 0;
+    .services-1 img {
+        width: 20px;
+        margin-bottom: 10px;
+    }
+
+    .services-1 h3 {
+        font-size: 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link h3,
+    .link p,
+    .link a {
+        margin-bottom: 10px;
     }
 }
