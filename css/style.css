@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('ruta/a/tu/imagen.jpg') center bottom/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/elixir1.avif') center bottom/cover no-repeat;
     min-height: 70vh;
     display: flex;
     align-items: center;
@@ -76,11 +76,15 @@ body {
     align-items: center;
 }
 
+.logo img{
+    height: 100px;
+    width: auto;
+    display: block;
+}
+
 .menu .logo {
-    font-size: 25px;
-    font-weight: 800;
-    color: #ffffff;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .menu .navbar {
@@ -155,6 +159,36 @@ body {
     color: #414247;
     padding: 0 250px;
     margin-bottom: 35px;
+}
+
+.text-content {
+    position: relative;
+}
+
+.more-text {
+    display: none;
+}
+
+.dots {
+    display: inline;
+}
+
+.read-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #a3d130;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background-color: #ffffff;
+    color: #a3d130;
+    border: 2px solid #a3d130;
 }
 
 .elixir-group {
@@ -347,6 +381,11 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+
+    .read-more-btn {
+        width: 100%;
+        padding: 8px;
+    }
     .menu .navbar ul{
         flex-direction: column;
     }
@@ -363,8 +402,8 @@ body {
         padding: 8px 20px;
     }
 
-    .menu .logo {
-        font-size: 22px;
+    .menu .logo img{
+        height: 50px;
     }
 
     .menu .navbar {
@@ -373,7 +412,7 @@ body {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #323337;
+        background-color: rgba(50, 51, 55, 0.8);
         display: none;
         padding: 20px 0;
     }
