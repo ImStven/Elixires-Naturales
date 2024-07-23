@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #323337;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/somos1.jpg') center bottom/cover no-repeat;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.header-content {
+    padding: 100px 0;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 255px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #a3d130;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: #ffffff;
+    color: #a3d130;
+    border: 2px solid #a3d130;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+    width: auto;
+    display: block;
+}
+
+.menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu .navbar ul li {
+    margin-left: 20px;
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.menu .navbar ul li a:hover {
+    color: #a3d130;
+}
+
+.menu .menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+
+/* Estilos de contenido "Elixir" */
+.elixir {
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+.elixir-content {
+    text-align: center;
+}
+
+.elixir-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.text-content {
+    position: relative;
+}
+
+.more-text {
+    display: none;
+}
+
+.dots {
+    display: inline;
+}
+
+.read-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #a3d130;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background-color: #ffffff;
+    color: #a3d130;
+    border: 2px solid #a3d130;
+}
+
+.elixir-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.elixir-1 {
+    padding: 0 25px;
+}
+
+.elixir-1 img {
+    width: 200px;
+    max-width: 100%;
+}
+
+.elixir-1 .elixir-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.elixir-1 h3 {
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* Estilos de sección "Services" */
+.services {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/img2.jpg') center bottom/cover no-repeat fixed;
+    padding: 100px 0;
+}
+
+.services-content {
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.services-1 {
+    padding: 0 100px;
+}
+
+.services-1 img {
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.services-1 h3 {
+    color: #a3d130;
+    font-size: 18px;
+}
+
+/* Estilos de pie de página */
+.footer {
+    padding: 50px 0;
+    background-color: #000000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.link p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.link{
+    flex: 1;
+    min-width: 250px;
+}
+ .link.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .map {
+    width: 100%;
+    height: 220px;
+    border: 0;
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 15px;
+ }
+
+.general{
+    display: flex;
+    flex-wrap: wrap;
+}
+.general-1{
+    padding: 100px;
+    background-color: #e1e2e6;
+    box-sizing: border-box;
+    flex: 1 1 50%;
+}
+
+.general-2, .general-3{
+
+    min-height: 400px;
+    flex: 1 1 50%;
+}
+
+.general-2 img,
+.general-3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1200px) {
+
+    .general {
+        flex-direction: column;
+    }
+    .general-1,
+    .general-2,
+    .general-3{
+        width: 100%;
+        padding: 50px 20px;
+        min-height: 300px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .header-content p,
+    .txt-p,
+    .services-content p {
+        padding: 0 100px;
+    }
+
+    .elixir-content h2,
+    .txt-p {
+        padding: 0 150px;
+    }
+
+    .elixir-1,
+    .services-1 {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .general-1,
+    .general-2,
+    .general-3{
+        padding: 30px 15px;
+        min-height: 250px;
+    }
+    
+    h2{
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    p{
+        font-size: 14px;
+        margin: 20px 0 30px 0;
+    }
+    .header-content {
+        padding: 50px 20px;
+    }
+
+    .header-content h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .header-content p {
+        padding: 0 30px;
+    }
+
+    .btn-1 {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+
+    .elixir {
+        padding: 50px 0;
+    }
+
+    .elixir-content h2,
+    .txt-p {
+        padding: 0 30px;
+    }
+
+    .elixir-group {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .elixir-1 .elixir-img {
+        display: none;
+    }
+
+    .services {
+        padding: 50px 0;
+    }
+
+    .services-content p {
+        padding: 0 30px;
+    }
+
+    .services-group {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .services-1 {
+        padding: 0 30px;
+    }
+
+    .footer {
+        padding: 50px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .general{
+        flex-direction: column;
+    }
+
+    .general-1,
+    .general-2,
+    .general-3{
+        width: 100%;
+        padding: 20px;
+        min-height: 200px;
+    }
+
+    .general-2, .general-3{
+        order: -1;
+    }
+
+    h2{
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    p{
+        font-size: 12px;
+        margin: 15px 0 20px 0;
+    }
+
+    .read-more-btn {
+        width: 100%;
+        padding: 8px;
+    }
+    .menu .navbar ul{
+        flex-direction: column;
+    }
+    .header-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .header-content p {
+        padding: 0 20px;
+    }
+
+    .btn-1 {
+        padding: 8px 20px;
+    }
+
+    .menu .logo img{
+        height: 50px;
+    }
+
+    .menu .navbar {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(50, 51, 55, 0.8);
+        display: none;
+        padding: 20px 0;
+    }
+
+    .menu .navbar ul {
+        margin: 0;
+    }
+
+    .menu .menu-icon {
+        display: block;
+        cursor: pointer;
+        color: #ffffff;
+    }
+
+    #menu:checked ~ .navbar {
+        display: flex;
+    }
+
+    .elixir-content h2,
+    .txt-p {
+        padding: 0 20px;
+    }
+
+    .elixir-1 img {
+        width: 150px;
+    }
+
+    .elixir-1 .elixir-img {
+        display: none;
+    }
+
+    .services-content h2 {
+        font-size: 42px;
+        line-height: 56px;
+    }
+
+    .services-content p {
+        padding: 0 20px;
+    }
+
+    .services-1 img {
+        width: 20px;
+        margin-bottom: 10px;
+    }
+
+    .services-1 h3 {
+        font-size: 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link h3,
+    .link p,
+    .link a {
+        margin-bottom: 10px;
+    }
+}
